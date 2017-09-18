@@ -51,6 +51,8 @@ class Scraper
       :profile_quote => profile_quote,
       :bio => bio
     }
+
+    student_info.delete_if { |key, value| value.to_s.strip == '' }
   end
 
 end
