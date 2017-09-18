@@ -31,6 +31,7 @@ class Scraper
     twitter = ""
 
     social = student_profile.css('.social-icon-container a')
+    binding.pry
         blog = social[3].attr('href')
       social.each do |social_site|
         if social_site.attr('href').include?("linkedin")
